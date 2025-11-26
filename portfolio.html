@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Kalpesh Agravat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="brand"><div class="logo">KA</div><h1>Kalpesh Agravat</h1></div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="skills.html" class="nav-link">Skills</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
+        </nav>
+        <div style="display:flex;align-items:center;gap:8px">
+          <button id="themeToggle" class="btn btn-outline" aria-label="Toggle light theme">🌞</button>
+          <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding-top:120px">
+      <h2>Portfolio — Selected Android Native Projects</h2>
+      <p style="color:var(--muted)">A curated selection of Android-native applications I architected and developed. Each card lists the techs used and a short summary.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project card template -->
+        <div class="project-card">
+          <div class="project-img"><img src="images/pictionus_1.webp" srcset="images/pictionus_2.webp 2x" alt="PictionUs screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.blueberry.pictionUs" target="_blank" rel="noopener">PictionUs — Photo Sharing Platform</a></div>
+            <div class="project-meta">Social photo sharing app with feeds, likes, comments and real-time updates.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.blueberry.pictionUs" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/pocket_jurey.png" alt="Pocket Jury screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.pocketjury" target="_blank" rel="noopener">Pocket Jury — Legal Roleplay & Debate App</a></div>
+            <div class="project-meta">Role-play and debate workflows for legal education with multimedia support.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.pocketjury" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%23014947'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Solo AI Chat</text></svg>" alt="Solo AI chat" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Solo AI Chat — AI Chat Application</div>
+            <div class="project-meta">AI-based messaging with local storage, streaming responses and custom model integration.</div>
+            <div class="badges"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></div>
+          </div>
+        </div>
+
+        <!-- Add remaining projects (abbreviated for brevity) -->
+        <div class="project-card">
+          <div class="project-img"><img src="images/tuck.png" alt="Tuck screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.tuck" target="_blank" rel="noopener">Tuck — Instant Cashback App</a></div>
+            <div class="project-meta">Cashback offers, QR integration and secure transactions.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.tuck" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/Ancient Origins.png" alt="Ancient Origins screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.ionicframework.ancientorigins541954" target="_blank" rel="noopener">Ancient Origins — History App</a></div>
+            <div class="project-meta">Educational app with timelines, media and offline content support.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.ionicframework.ancientorigins541954" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%238b5cf6'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>XIAO Lottery</text></svg>" alt="XIAO Lottery" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">XIAO App Lottery</div>
+            <div class="project-meta">Lottery management with push notifications and analytics.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%23222c3a'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Flipkart Picking</text></svg>" alt="Picking Process" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Picking Process — Flipkart Warehouse</div>
+            <div class="project-meta">Warehouse management and scanner integration for picking operations.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%230073b3'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>1Fichier</text></svg>" alt="1Fichier.com" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">1Fichier.com — File Storage App</div>
+            <div class="project-meta">Cloud file management, uploads, downloads and account sync.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%233a7b44'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>NumberBook</text></svg>" alt="NumberBook Lookup" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">NumberBook Lookup — Phonebook</div>
+            <div class="project-meta">Phonebook with caller ID, Arabic support and spam detection.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%238b2f16'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Bazaar POS</text></svg>" alt="Bazaar POS" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Bazaar — POS Sales Management</div>
+            <div class="project-meta">Full POS system with reports, inventory and sales flows.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%230d3b66'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Bazaar HandPOS</text></svg>" alt="Bazaar HandPOS" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Bazaar HandPOS — Handheld POS</div>
+            <div class="project-meta">Handheld POS with printer and peripheral support.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/Edudus.png" alt="Edudus screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.alex.edudus" target="_blank" rel="noopener">Edudus — Smart Pen Digital Note App</a></div>
+            <div class="project-meta">Digital pen integration and handwriting capture for education.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%231f2937'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>InfoPlayer</text></svg>" alt="InfoPlayer" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">InfoPlayer — Advertisement Display</div>
+            <div class="project-meta">Digital signage and advert scheduling app for displays.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/wiyak.png" alt="Wiyak Rider screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.wiyak.passenger" target="_blank" rel="noopener">Wiyak Rider / Automak Driver — Taxi Booking</a></div>
+            <div class="project-meta">Complete taxi booking ecosystem (rider + driver apps) with map, trip management and payments.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.wiyak.passenger" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/pocket_jurey.png" alt="Pickaboo / Pocket Jury image" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Pickaboo — Bus Booking App</div>
+            <div class="project-meta">Bus booking, seat selection and booking management.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/quotes_maker.png" alt="Quote Maker screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.bmac.quotemaker" target="_blank" rel="noopener">Quote Maker — Social Quotes Platform</a></div>
+            <div class="project-meta">Create and share quote images with social feed features.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.bmac.quotemaker" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><defs><linearGradient id='g2' x1='0' x2='1'><stop offset='0' stop-color='%232b87ff'/><stop offset='1' stop-color='%233a7b44'/></linearGradient></defs><rect width='800' height='450' fill='url(%23g2)'/><text x='50%' y='50%' font-size='30' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Impact Investment Services</text></svg>" alt="Impact Investment" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Impact Investment Services</div>
+            <div class="project-meta">Stock tips, watchlists and chat for investors.</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/make_24.png" alt="Make 24 screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.andy.make24" target="_blank" rel="noopener">Make 24 — Puzzle Game</a></div>
+            <div class="project-meta">Mathematical puzzle game with leaderboards and in-app rewards.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.andy.make24" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/christmas_cuntdown_timer.png" alt="Christmas Apps screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.christmas.countdown" target="_blank" rel="noopener">Christmas Apps Suite</a></div>
+            <div class="project-meta">Countdowns, themed editors and festive utilities.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.christmas.countdown" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="images/moro_cotton_calculator.png" alt="MORO Cotton Calculator screenshot" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.bmac.cottoncalculator" target="_blank" rel="noopener">MORO Cotton Calculator</a></div>
+            <div class="project-meta">Industry-grade calculator for cotton processing and estimation.</div>
+            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.bmac.cottoncalculator" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img"><img src="https://via.placeholder.com/800x450?text=Story+Byte" alt="Story Byte" style="width:100%;height:100%;object-fit:cover"></div>
+          <div class="project-info">
+            <div class="project-title">Story Byte — Book Platform</div>
+            <div class="project-meta">Book writing and reading platform with monetization features.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Kalpesh Agravat</p>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
