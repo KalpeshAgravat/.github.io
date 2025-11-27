@@ -1,148 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - Kalpesh Agravat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Skills — Kalpesh Agravat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <aside class="sidebar">
-        <div class="profile">
-            <div class="profile-img">
-                <i class="fas fa-user" style="font-size: 60px; color: #7f8c8d; line-height: 150px;"></i>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="brand"><div class="logo">KA</div><h1>Kalpesh Agravat</h1></div>
+                        <nav class="nav">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="skills.html" class="nav-link active">Skills</a>
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                            <a href="contact.html" class="nav-link">Contact</a>
+                            <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
+                        </nav>
+                        <div style="display:flex;align-items:center;gap:8px">
+                            <button id="themeToggle" class="btn btn-outline" aria-label="Toggle light theme">🌞</button>
+                            <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+                        </div>
             </div>
-            <h1 class="name">Kalpesh Agravat</h1>
-            <p class="title">Mobile Application Developer</p>
         </div>
-        
-        <div class="contact-info-sidebar">
-            <p><i class="fas fa-envelope"></i> kalpeshagravat456@gmail.com</p>
-            <p><i class="fas fa-phone"></i> +91 9904544631</p>
-            <p><i class="fas fa-map-marker-alt"></i> Rajkot, Gujarat, India</p>
-        </div>
-        
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="skills.html" class="nav-link active">Skills</a></li>
-            <li><a href="projects.html" class="nav-link">Projects</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/kalpeshagravat/"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </aside>
+    </header>
 
-    <main class="main-content">
-        <section id="skills">
-            <h1 class="section-title">My Skills</h1>
-            
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Java</span>
+    <main class="container">
+        <section style="padding-top:120px">
+            <h2>Skills & Expertise</h2>
+            <p style="color:var(--muted);margin-bottom:12px">Categorized skill overview with proficiency and technologies I use daily.</p>
+
+            <div class="card">
+                <h3>Android Development</h3>
+                <div class="skill-tags" style="margin-top:12px">
                     <span class="skill-tag">Kotlin</span>
-                    <span class="skill-tag">Swift</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">C++</span>
-                    <span class="skill-tag">SQL</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Mobile Development</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Android Development</span>
-                    <span class="skill-tag">iOS Development</span>
-                    <span class="skill-tag">React Native</span>
                     <span class="skill-tag">Jetpack Compose</span>
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">REST APIs</span>
-                    <span class="skill-tag">MVP Architecture</span>
-                    <span class="skill-tag">Dagger</span>
+                    <span class="skill-tag">Android SDK</span>
+                    <span class="skill-tag">Coroutines</span>
+                    <span class="skill-tag">WorkManager</span>
+                    <span class="skill-tag">Room</span>
+                    <span class="skill-tag">Services & Background</span>
                 </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
+
+                <h3 style="margin-top:18px">Programming Languages</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">MQTT</span>
-                    <span class="skill-tag">Payment Gateways</span>
-                    <span class="skill-tag">Hardware Integration</span>
-                    <span class="skill-tag">POS Systems</span>
-                    <span class="skill-tag">Augmented Reality</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">JavaScript</span>
                 </div>
-            </div>
-            
-            <div class="skills-container">
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>Android Development</span>
-                        <span>95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 95%;"></div>
-                    </div>
+
+                <h3 style="margin-top:18px">Tools & Technologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Dagger / Hilt</span>
+                    <span class="skill-tag">Retrofit</span>
+                    <span class="skill-tag">Git / CI</span>
+                    <span class="skill-tag">POS Hardware</span>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>Kotlin</span>
-                        <span>90%</span>
+
+                <h3 style="margin-top:18px">Proficiency</h3>
+                <div class="skill-list">
+                    <div>
+                        <div style="display:flex;justify-content:space-between;font-weight:600">Android Development <span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 90%;"></div>
+                    <div>
+                        <div style="display:flex;justify-content:space-between;font-weight:600">Kotlin <span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
                     </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>React Native</span>
-                        <span>85%</span>
+                    <div>
+                        <div style="display:flex;justify-content:space-between;font-weight:600">Java <span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-level" style="width:88%"></div></div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>Java</span>
-                        <span>88%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 88%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>iOS/Swift</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>Firebase</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 85%;"></div>
+                    <div>
+                        <div style="display:flex;justify-content:space-between;font-weight:600">Firebase <span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2023 Kalpesh Agravat. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2023 Kalpesh Agravat</p>
+        </footer>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
