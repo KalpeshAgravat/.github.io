@@ -1,228 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio — Kalpesh Agravat</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="brand"><div class="logo">KA</div><h1>Kalpesh Agravat</h1></div>
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="portfolio.html" class="nav-link active">Portfolio</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-          <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
-        </nav>
-        <div style="display:flex;align-items:center;gap:8px">
-          <button id="themeToggle" class="btn btn-outline" aria-label="Toggle light theme">🌞</button>
-          <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">
+        <h3 class="gradient-text">Kalpesh.dev</h3>
+      </a>
+
+      <div class="flex-center" style="gap: 1rem;">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"
+              target="_blank">Download CV</a></li>
+        </ul>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="hamburger">☰</div>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
-    <section style="padding-top:120px">
-      <h2>Portfolio — Selected Android Native Projects</h2>
-      <p style="color:var(--muted)">A curated selection of Android-native applications I architected and developed. Each card lists the techs used and a short summary.</p>
+  <main style="padding-top: 80px;">
+    <section class="section">
+      <div class="container">
+        <h2 class="gradient-text">Portfolio — Selected Android Native Projects</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px;">A curated selection of
+          Android-native applications I architected and developed. Each card lists the techs used and a short summary.
+        </p>
 
-      <div class="projects-grid">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
 
-        <!-- Project card template -->
-        <div class="project-card">
-          <div class="project-img"><img src="images/pictionus_1.webp" srcset="images/pictionus_2.webp 2x" alt="PictionUs screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.blueberry.pictionUs" target="_blank" rel="noopener">PictionUs — Photo Sharing Platform</a></div>
-            <div class="project-meta">Social photo sharing app with feeds, likes, comments and real-time updates.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.blueberry.pictionUs" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project: Fire-Notes -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/fire_note.png" alt="Fire-Notes screenshot"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://github.com/KalpeshAgravat/FireNotes" target="_blank"
+                  style="color: var(--text-primary);">Fire-Notes</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">A secure note-taking app with Firebase integration for
+                real-time sync and authentication.</p>
+              <a href="https://github.com/KalpeshAgravat/FireNotes" target="_blank" class="btn btn-outline"
+                style="padding: 0.25rem 0.75rem; font-size: 0.8rem;"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/pocket_jurey.png" alt="Pocket Jury screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.pocketjury" target="_blank" rel="noopener">Pocket Jury — Legal Roleplay & Debate App</a></div>
-            <div class="project-meta">Role-play and debate workflows for legal education with multimedia support.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.pocketjury" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project: E-Store -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/E-store.png" alt="E-Store screenshot"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://github.com/KalpeshAgravat/E-Store" target="_blank"
+                  style="color: var(--text-primary);">E-Store</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">A complete e-commerce solution featuring product
+                browsing, cart management, and checkout flow.</p>
+              <a href="https://github.com/KalpeshAgravat/E-Store" target="_blank" class="btn btn-outline"
+                style="padding: 0.25rem 0.75rem; font-size: 0.8rem;"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%23014947'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Solo AI Chat</text></svg>" alt="Solo AI chat" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Solo AI Chat — AI Chat Application</div>
-            <div class="project-meta">AI-based messaging with local storage, streaming responses and custom model integration.</div>
-            <div class="badges"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></div>
+          <!-- Project 1 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/pictionus_2.webp" alt="PictionUs screenshot"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.blueberry.pictionUs" target="_blank"
+                  style="color: var(--text-primary);">PictionUs — Photo Sharing</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Social photo sharing app with feeds, likes, comments
+                and real-time updates.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.blueberry.pictionUs" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Add remaining projects (abbreviated for brevity) -->
-        <div class="project-card">
-          <div class="project-img"><img src="images/tuck.png" alt="Tuck screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.tuck" target="_blank" rel="noopener">Tuck — Instant Cashback App</a></div>
-            <div class="project-meta">Cashback offers, QR integration and secure transactions.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.tuck" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 2 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/pocket_jurey.png" alt="Pocket Jury screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.pocketjury" target="_blank"
+                  style="color: var(--text-primary);">Pocket Jury — Legal Roleplay</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Role-play and debate workflows for legal education with
+                multimedia support.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.pocketjury" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/Ancient Origins.png" alt="Ancient Origins screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.ionicframework.ancientorigins541954" target="_blank" rel="noopener">Ancient Origins — History App</a></div>
-            <div class="project-meta">Educational app with timelines, media and offline content support.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.ionicframework.ancientorigins541954" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 3 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #014947; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">Solo AI Chat</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Solo AI Chat</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">AI-based messaging with local storage, streaming
+                responses and custom model integration.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%238b5cf6'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>XIAO Lottery</text></svg>" alt="XIAO Lottery" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">XIAO App Lottery</div>
-            <div class="project-meta">Lottery management with push notifications and analytics.</div>
+          <!-- Project 4 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/tuck.png" alt="Tuck screenshot" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.tuck" target="_blank"
+                  style="color: var(--text-primary);">Tuck — Instant Cashback</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Cashback offers, QR integration and secure
+                transactions.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.tuck" target="_blank" class="btn btn-outline"
+                style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%23222c3a'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Flipkart Picking</text></svg>" alt="Picking Process" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Picking Process — Flipkart Warehouse</div>
-            <div class="project-meta">Warehouse management and scanner integration for picking operations.</div>
+          <!-- Project 5 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/Ancient Origins.png" alt="Ancient Origins screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.ancientorigins541954"
+                  target="_blank" style="color: var(--text-primary);">Ancient Origins</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Educational app with timelines, media and offline
+                content support.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.ionicframework.ancientorigins541954"
+                target="_blank" class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play
+                Store</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%230073b3'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>1Fichier</text></svg>" alt="1Fichier.com" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">1Fichier.com — File Storage App</div>
-            <div class="project-meta">Cloud file management, uploads, downloads and account sync.</div>
+          <!-- Project 6 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #8b5cf6; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">XIAO Lottery</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">XIAO App Lottery</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Lottery management with push notifications and
+                analytics.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%233a7b44'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>NumberBook</text></svg>" alt="NumberBook Lookup" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">NumberBook Lookup — Phonebook</div>
-            <div class="project-meta">Phonebook with caller ID, Arabic support and spam detection.</div>
+          <!-- Project 7 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #222c3a; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">Flipkart Picking</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Picking Process</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Warehouse management and scanner integration for
+                picking operations.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%238b2f16'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Bazaar POS</text></svg>" alt="Bazaar POS" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Bazaar — POS Sales Management</div>
-            <div class="project-meta">Full POS system with reports, inventory and sales flows.</div>
+          <!-- Project 8 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #0073b3; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">1Fichier.com</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">1Fichier.com</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Cloud file management, uploads, downloads and account
+                sync.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%230d3b66'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Bazaar HandPOS</text></svg>" alt="Bazaar HandPOS" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Bazaar HandPOS — Handheld POS</div>
-            <div class="project-meta">Handheld POS with printer and peripheral support.</div>
+          <!-- Project 9 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #3a7b44; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">NumberBook</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">NumberBook Lookup</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Phonebook with caller ID, Arabic support and spam
+                detection.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/Edudus.png" alt="Edudus screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.alex.edudus" target="_blank" rel="noopener">Edudus — Smart Pen Digital Note App</a></div>
-            <div class="project-meta">Digital pen integration and handwriting capture for education.</div>
+          <!-- Project 10 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #8b2f16; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">Bazaar POS</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Bazaar — POS</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Full POS system with reports, inventory and sales
+                flows.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%231f2937'/><text x='50%' y='50%' font-size='34' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>InfoPlayer</text></svg>" alt="InfoPlayer" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">InfoPlayer — Advertisement Display</div>
-            <div class="project-meta">Digital signage and advert scheduling app for displays.</div>
+          <!-- Project 11 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #0d3b66; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">Bazaar HandPOS</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Bazaar HandPOS</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Handheld POS with printer and peripheral support.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/wiyak.png" alt="Wiyak Rider screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.wiyak.passenger" target="_blank" rel="noopener">Wiyak Rider / Automak Driver — Taxi Booking</a></div>
-            <div class="project-meta">Complete taxi booking ecosystem (rider + driver apps) with map, trip management and payments.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.wiyak.passenger" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 12 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/Edudus.png" alt="Edudus screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.alex.edudus" target="_blank"
+                  style="color: var(--text-primary);">Edudus — Smart Pen</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Digital pen integration and handwriting capture for
+                education.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/pocket_jurey.png" alt="Pickaboo / Pocket Jury image" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Pickaboo — Bus Booking App</div>
-            <div class="project-meta">Bus booking, seat selection and booking management.</div>
+          <!-- Project 13 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: #1f2937; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">InfoPlayer</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">InfoPlayer</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Digital signage and advert scheduling app for displays.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/quotes_maker.png" alt="Quote Maker screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.bmac.quotemaker" target="_blank" rel="noopener">Quote Maker — Social Quotes Platform</a></div>
-            <div class="project-meta">Create and share quote images with social feed features.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.bmac.quotemaker" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 14 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/wiyak.png" alt="Wiyak Rider screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.wiyak.passenger" target="_blank"
+                  style="color: var(--text-primary);">Wiyak Rider</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Complete taxi booking ecosystem with map, trip
+                management and payments.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.wiyak.passenger" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><defs><linearGradient id='g2' x1='0' x2='1'><stop offset='0' stop-color='%232b87ff'/><stop offset='1' stop-color='%233a7b44'/></linearGradient></defs><rect width='800' height='450' fill='url(%23g2)'/><text x='50%' y='50%' font-size='30' fill='white' text-anchor='middle' font-family='Poppins, Arial' dy='.3em'>Impact Investment Services</text></svg>" alt="Impact Investment" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Impact Investment Services</div>
-            <div class="project-meta">Stock tips, watchlists and chat for investors.</div>
+          <!-- Project 15 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/pocket_jurey.png" alt="Pickaboo screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Pickaboo</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Bus booking, seat selection and booking management.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/make_24.png" alt="Make 24 screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.andy.make24" target="_blank" rel="noopener">Make 24 — Puzzle Game</a></div>
-            <div class="project-meta">Mathematical puzzle game with leaderboards and in-app rewards.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.andy.make24" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 16 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/quotes_maker.png" alt="Quote Maker screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.bmac.quotemaker" target="_blank"
+                  style="color: var(--text-primary);">Quote Maker</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Create and share quote images with social feed
+                features.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.bmac.quotemaker" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/christmas_cuntdown_timer.png" alt="Christmas Apps screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.christmas.countdown" target="_blank" rel="noopener">Christmas Apps Suite</a></div>
-            <div class="project-meta">Countdowns, themed editors and festive utilities.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.christmas.countdown" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 17 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div
+              style="height: 200px; background: linear-gradient(135deg, #2b87ff, #3a7b44); display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; text-align: center; color: white;">Impact
+                Investment</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Impact Investment</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Stock tips, watchlists and chat for investors.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="images/moro_cotton_calculator.png" alt="MORO Cotton Calculator screenshot" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title"><a href="https://play.google.com/store/apps/details?id=com.bmac.cottoncalculator" target="_blank" rel="noopener">MORO Cotton Calculator</a></div>
-            <div class="project-meta">Industry-grade calculator for cotton processing and estimation.</div>
-            <div class="badges"><a href="https://play.google.com/store/apps/details?id=com.bmac.cottoncalculator" target="_blank" rel="noopener"><img class="badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a></div>
+          <!-- Project 18 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/make_24.png" alt="Make 24 screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.andy.make24" target="_blank"
+                  style="color: var(--text-primary);">Make 24</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Mathematical puzzle game with leaderboards and in-app
+                rewards.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.andy.make24" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-img"><img src="https://via.placeholder.com/800x450?text=Story+Byte" alt="Story Byte" style="width:100%;height:100%;object-fit:cover"></div>
-          <div class="project-info">
-            <div class="project-title">Story Byte — Book Platform</div>
-            <div class="project-meta">Book writing and reading platform with monetization features.</div>
+          <!-- Project 19 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/christmas_cuntdown_timer.png" alt="Christmas Apps screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.christmas.countdown" target="_blank"
+                  style="color: var(--text-primary);">Christmas Apps</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Countdowns, themed editors and festive utilities.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.christmas.countdown" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
           </div>
-        </div>
 
+          <!-- Project 20 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="images/moro_cotton_calculator.png" alt="MORO Cotton Calculator screenshot"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">
+                <a href="https://play.google.com/store/apps/details?id=com.bmac.cottoncalculator" target="_blank"
+                  style="color: var(--text-primary);">MORO Cotton Calculator</a>
+              </h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Industry-grade calculator for cotton processing and
+                estimation.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.bmac.cottoncalculator" target="_blank"
+                class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;">Play Store</a>
+            </div>
+          </div>
+
+          <!-- Project 21 -->
+          <div class="glass-card" style="padding: 0; overflow: hidden;">
+            <div style="height: 200px; background: #333; display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 1.5rem; font-weight: 700; color: white;">Story Byte</span>
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Story Byte</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Book writing and reading platform with monetization
+                features.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
-
-    <footer>
-      <p>&copy; 2023 Kalpesh Agravat</p>
-    </footer>
   </main>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

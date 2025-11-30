@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Kalpesh Agravat</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Page-scoped font + palette preview: Inter + warmer accent colors -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* Global warm palette is applied site-wide via css/style.css :root variables. */
-    /* Use Inter as the primary font on this page (falls back to Poppins)
-       This only affects contact.html because it's an inline style after the main stylesheet. */
-    body{font-family:'Inter', 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
-
-    /* No page-scoped palette overrides — warm theme is global. */
-  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="brand"><div class="logo">KA</div><h1>Kalpesh Agravat</h1></div>
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="skills.html" class="nav-link">Skills</a>
-          <a href="portfolio.html" class="nav-link">Portfolio</a>
-          <a href="contact.html" class="nav-link active">Contact</a>
-          <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
-        </nav>
-        <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">
+        <h3 class="gradient-text">Kalpesh.dev</h3>
+      </a>
+
+      <div class="flex-center" style="gap: 1rem;">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;"
+              target="_blank">Download CV</a></li>
+        </ul>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="hamburger">☰</div>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
-    <section style="padding-top:120px">
-      <h2>Contact</h2>
-      <p style="color:var(--muted)">Interested to work together? Send a message or reach out directly via email or LinkedIn.</p>
+  <main style="padding-top: 80px;">
+    <section class="section">
+      <div class="container">
+        <h2 class="gradient-text">Contact</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px;">Interested to work together?
+          Send a message or reach out directly via email or LinkedIn.</p>
 
-      <div class="contact-grid" style="margin-top:18px">
-        <div>
-          <div class="card">
-            <h3>Direct contact</h3>
-            <p style="color:var(--muted)"><i class="fas fa-envelope"></i> <a href="mailto:kalpeshagravat456@gmail.com">kalpeshagravat456@gmail.com</a></p>
-            <p style="color:var(--muted)"><i class="fas fa-phone"></i> +91 99045 44631</p>
-            <p style="color:var(--muted)"><i class="fas fa-map-marker-alt"></i> Rajkot, Gujarat, India</p>
-            <p style="margin-top:12px"><a class="btn btn-outline" href="https://www.linkedin.com/in/kalpeshagravat/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+          <div class="glass-card">
+            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);">Direct Contact</h3>
+            <div style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+              <i class="fas fa-envelope" style="font-size: 1.2rem; color: var(--primary-color);"></i>
+              <a href="mailto:kalpeshagravat456@gmail.com"
+                style="color: var(--text-primary);">kalpeshagravat456@gmail.com</a>
+            </div>
+            <div style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+              <i class="fas fa-phone" style="font-size: 1.2rem; color: var(--primary-color);"></i>
+              <span style="color: var(--text-primary);">+91 99045 44631</span>
+            </div>
+            <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+              <i class="fas fa-map-marker-alt" style="font-size: 1.2rem; color: var(--primary-color);"></i>
+              <span style="color: var(--text-primary);">Rajkot, Gujarat, India</span>
+            </div>
+            <a href="https://www.linkedin.com/in/kalpeshagravat/" target="_blank" class="btn btn-outline"
+              style="width: 100%; text-align: center;">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
           </div>
 
-          <div class="card" style="margin-top:16px">
-            <h3>Availability</h3>
-            <p style="color:var(--muted)">Open to full-time, contract, and consulting roles. Available for remote and on-site engagements.</p>
+          <div class="glass-card">
+            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);">Availability</h3>
+            <p style="color: var(--text-secondary);">Open to full-time, contract, and consulting roles. Available for
+              remote and on-site engagements.</p>
           </div>
+
         </div>
       </div>
     </section>
-
-    <footer>
-      <p>&copy; 2023 Kalpesh Agravat</p>
-    </footer>
   </main>
 
-  <!-- palette toggle removed; warm theme is global -->
   <script src="js/main.js"></script>
 </body>
+
 </html>

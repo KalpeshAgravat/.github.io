@@ -1,94 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills — Kalpesh Agravat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="brand"><div class="logo">KA</div><h1>Kalpesh Agravat</h1></div>
-                        <nav class="nav">
-                            <a href="index.html" class="nav-link">Home</a>
-                            <a href="about.html" class="nav-link">About</a>
-                            <a href="skills.html" class="nav-link active">Skills</a>
-                            <a href="portfolio.html" class="nav-link">Portfolio</a>
-                            <a href="contact.html" class="nav-link">Contact</a>
-                            <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
-                        </nav>
-                        <div style="display:flex;align-items:center;gap:8px">
-                            <button id="themeToggle" class="btn btn-outline" aria-label="Toggle light theme">🌞</button>
-                            <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
-                        </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="logo">
+                <h3 class="gradient-text">Kalpesh.dev</h3>
+            </a>
+
+            <div class="flex-center" style="gap: 1rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;" target="_blank">Download CV</a></li>
+                </ul>
+
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <div class="hamburger">☰</div>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section style="padding-top:120px">
-            <h2>Skills & Expertise</h2>
-            <p style="color:var(--muted);margin-bottom:12px">Categorized skill overview with proficiency and technologies I use daily.</p>
+    <main style="padding-top: 80px;">
+        <section class="section">
+            <div class="container">
+                <h2 class="gradient-text">Skills & Expertise</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px;">
+                    Comprehensive technical skillset spanning native Android, cross-platform development, and backend
+                    integration.
+                </p>
 
-            <div class="card">
-                <h3>Android Development</h3>
-                <div class="skill-tags" style="margin-top:12px">
-                    <span class="skill-tag">Kotlin</span>
-                    <span class="skill-tag">Jetpack Compose</span>
-                    <span class="skill-tag">Android SDK</span>
-                    <span class="skill-tag">Coroutines</span>
-                    <span class="skill-tag">WorkManager</span>
-                    <span class="skill-tag">Room</span>
-                    <span class="skill-tag">Services & Background</span>
-                </div>
+                <div class="grid" style="gap: 2rem;">
 
-                <h3 style="margin-top:18px">Programming Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Kotlin</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">C/C++</span>
-                    <span class="skill-tag">JavaScript</span>
-                </div>
-
-                <h3 style="margin-top:18px">Tools & Technologies</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">Dagger / Hilt</span>
-                    <span class="skill-tag">Retrofit</span>
-                    <span class="skill-tag">Git / CI</span>
-                    <span class="skill-tag">POS Hardware</span>
-                </div>
-
-                <h3 style="margin-top:18px">Proficiency</h3>
-                <div class="skill-list">
-                    <div>
-                        <div style="display:flex;justify-content:space-between;font-weight:600">Android Development <span>95%</span></div>
-                        <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
+                    <!-- Programming Languages -->
+                    <div class="glass-card">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);"><i class="fas fa-code"
+                                style="margin-right: 10px;"></i> Programming Languages</h3>
+                        <div class="flex" style="flex-wrap: wrap; gap: 0.8rem;">
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Kotlin</span>
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Java</span>
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Swift (iOS)</span>
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">C++</span>
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">JavaScript</span>
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">TypeScript</span>
+                            <span class="btn btn-outline"
+                                style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">SQL</span>
+                        </div>
                     </div>
-                    <div>
-                        <div style="display:flex;justify-content:space-between;font-weight:600">Kotlin <span>90%</span></div>
-                        <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
+
+                    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                        <!-- Android Frameworks -->
+                        <div class="glass-card">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);"><i class="fab fa-android"
+                                    style="margin-right: 10px;"></i> Android Frameworks</h3>
+                            <div class="flex" style="flex-wrap: wrap; gap: 0.8rem;">
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Jetpack
+                                    Compose</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">XML
+                                    Layouts</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Material
+                                    Design 3</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Clean
+                                    Architecture</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">MVVM /
+                                    MVP</span>
+                            </div>
+                        </div>
+
+                        <!-- Cross Platform -->
+                        <div class="glass-card">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);"><i class="fas fa-mobile-alt"
+                                    style="margin-right: 10px;"></i> Cross Platform</h3>
+                            <div class="flex" style="flex-wrap: wrap; gap: 0.8rem;">
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">React
+                                    Native</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Flutter
+                                    (Basic)</span>
+                            </div>
+                        </div>
+
+                        <!-- Async & Networking -->
+                        <div class="glass-card">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);"><i
+                                    class="fas fa-network-wired" style="margin-right: 10px;"></i> Async & Networking
+                            </h3>
+                            <div class="flex" style="flex-wrap: wrap; gap: 0.8rem;">
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Coroutines</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Kotlin
+                                    Flow</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">LiveData</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Retrofit</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">WebSocket /
+                                    MQTT</span>
+                            </div>
+                        </div>
+
+                        <!-- Storage & Database -->
+                        <div class="glass-card">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);"><i class="fas fa-database"
+                                    style="margin-right: 10px;"></i> Storage & Database</h3>
+                            <div class="flex" style="flex-wrap: wrap; gap: 0.8rem;">
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Room DB</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">SQLite</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">DataStore</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Firebase
+                                    Firestore</span>
+                            </div>
+                        </div>
+
+                        <!-- Tools & DI -->
+                        <div class="glass-card">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);"><i class="fas fa-tools"
+                                    style="margin-right: 10px;"></i> Tools & DI</h3>
+                            <div class="flex" style="flex-wrap: wrap; gap: 0.8rem;">
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Dagger
+                                    Hilt</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Koin</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Git /
+                                    GitHub</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">Android
+                                    Studio</span>
+                                <span class="btn btn-outline"
+                                    style="padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">CI/CD</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div style="display:flex;justify-content:space-between;font-weight:600">Java <span>88%</span></div>
-                        <div class="skill-bar"><div class="skill-level" style="width:88%"></div></div>
-                    </div>
-                    <div>
-                        <div style="display:flex;justify-content:space-between;font-weight:600">Firebase <span>85%</span></div>
-                        <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
-                    </div>
+
                 </div>
             </div>
         </section>
-
-        <footer>
-            <p>&copy; 2023 Kalpesh Agravat</p>
-        </footer>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

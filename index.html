@@ -1,68 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Kalpesh Agravat — Android Native Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpesh Agravat ✨ - Sr. Android Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Kalpesh Agravat — Senior Android Developer (Kotlin, Jetpack Compose, Android SDK). 7+ years, 24+ apps, 50K+ installs.">
-    <meta name="theme-color" content="#0f1724">
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="brand">
-                    <div class="logo">KA</div>
-                    <h1>Kalpesh Agravat</h1>
-                </div>
-                        <nav class="nav">
-                            <a href="index.html" class="nav-link active">Home</a>
-                            <a href="about.html" class="nav-link">About</a>
-                            <a href="skills.html" class="nav-link">Skills</a>
-                            <a href="portfolio.html" class="nav-link">Portfolio</a>
-                            <a href="contact.html" class="nav-link">Contact</a>
-                            <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
-                        </nav>
-                        <div style="display:flex;align-items:center;gap:8px">
-                            <button id="themeToggle" class="btn btn-outline" aria-label="Toggle light theme">🌞</button>
-                            <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
-                        </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="logo">
+                <h3 class="gradient-text">Kalpesh.dev</h3>
+            </a>
+
+            <div class="flex-center" style="gap: 1rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;" target="_blank">Download CV</a></li>
+                </ul>
+
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <div class="hamburger">☰</div>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section class="hero">
-            <div class="hero-left">
-                <h2>Senior Android Native Developer — Kotlin & Jetpack Compose</h2>
-                <p>7+ years building polished Android apps (24+ apps released). Specialised in performant native development using Kotlin, Android SDK, Jetpack libraries, Firebase and device integrations.</p>
-                <div class="btns">
-                    <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
-                    <a href="contact.html" class="btn btn-outline">Contact Me</a>
-                </div>
-                <p style="margin-top:14px;color:var(--muted)">Available for senior Android roles, consultancy and contract work.</p>
-            </div>
+    <!-- Hero Section -->
+    <main style="padding-top: 80px; min-height: 100vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 350px; gap: 4rem; align-items: center;">
 
-            <div class="hero-right">
-                <div class="card" style="width:320px;text-align:center;">
-                    <img src="images/profile_crop.png" alt="Kalpesh Agravat" style="width:220px;height:220px;border-radius:18px;object-fit:cover;box-shadow:0 12px 40px rgba(0,0,0,.6)">
-                    <h3 style="margin-top:12px">Kalpesh Agravat</h3>
-                    <p style="color:var(--muted);margin:8px 0">Android Native Developer — Kotlin, Jetpack Compose, Firebase</p>
-                    <div style="display:flex;gap:8px;justify-content:center;margin-top:12px">
-                        <a href="https://www.linkedin.com/in/kalpeshagravat/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="mailto:kalpeshagravat456@gmail.com" class="btn btn-outline"><i class="fas fa-envelope"></i> Email</a>
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <p class="accent-text"
+                        style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem; font-size: 1.2rem;">
+                        Hello, I'm</p>
+                    <h1 style="margin-bottom: 1rem; line-height: 1.1;">Kalpesh Agravat <span
+                            style="font-size: 2.5rem;">✨</span></h1>
+                    <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 2rem;">Sr. Android Developer</h2>
+
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; color: var(--text-secondary);">
+                        Expert in <strong>Kotlin & Java</strong>, Clean Architecture, and Modern UI/UX.
+                        Building scalable, high-performance Android applications with <strong>7+ years</strong> of
+                        experience.
+                    </p>
+
+                    <div
+                        style="margin-bottom: 2.5rem; display: flex; gap: 2rem; flex-wrap: wrap; color: var(--text-secondary);">
+                        <div class="flex-center" style="gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> Rajkot, Gujrat,
+                            India
+                        </div>
+                        <div class="flex-center" style="gap: 0.5rem;">
+                            <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                            kalpeshagravat456@gmail.com
+                        </div>
+                    </div>
+
+                    <div class="flex" style="gap: 1.5rem;">
+                        <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Me</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <footer>
-            <p>&copy; 2023 Kalpesh Agravat — Android Native Developer</p>
-        </footer>
+                <!-- Right Profile Card (Aligned with About Page style) -->
+                <div class="hero-profile">
+                    <div class="glass-card" style="text-align: center; position: relative;">
+                        <!-- Glow effect behind profile -->
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 250px; height: 250px; background: var(--primary-color); filter: blur(80px); opacity: 0.2; z-index: -1; border-radius: 50%;">
+                        </div>
+
+                        <img src="images/profile_crop.png" alt="Kalpesh"
+                            style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(139, 92, 246, 0.3); margin-bottom: 1.5rem;">
+
+                        <h3 style="margin-bottom: 0.5rem;">Kalpesh Agravat</h3>
+                        <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 1.5rem;">Senior Android
+                            Developer</p>
+
+                        <div style="display: flex; gap: 1rem; justify-content: center;">
+                            <a href="https://github.com/KalpeshAgravat" target="_blank" class="btn btn-outline"
+                                style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/kalpeshagravat/" target="_blank"
+                                class="btn btn-outline" style="padding: 0.5rem 1rem;"><i class="fab fa-linkedin"></i>
+                                LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

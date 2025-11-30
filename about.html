@@ -1,88 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Kalpesh Agravat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="brand">
-                    <div class="logo">KA</div>
-                    <h1>Kalpesh Agravat</h1>
-                </div>
-                        <nav class="nav">
-                            <a href="index.html" class="nav-link">Home</a>
-                            <a href="about.html" class="nav-link active">About</a>
-                            <a href="skills.html" class="nav-link">Skills</a>
-                            <a href="portfolio.html" class="nav-link">Portfolio</a>
-                            <a href="contact.html" class="nav-link">Contact</a>
-                            <a href="Kalpesh-Agravat-CV.pdf" class="cta" target="_blank" rel="noopener">Download CV</a>
-                        </nav>
-                        <div style="display:flex;align-items:center;gap:8px">
-                            <button id="themeToggle" class="btn btn-outline" aria-label="Toggle light theme">🌞</button>
-                            <button class="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
-                        </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="logo">
+                <h3 class="gradient-text">Kalpesh.dev</h3>
+            </a>
+
+            <!-- Navbar Links & Toggle -->
+            <div class="flex-center" style="gap: 1rem;">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;" target="_blank">Download CV</a></li>
+                </ul>
+
+                <!-- Theme Toggle (Right Side) -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <div class="hamburger">☰</div>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section style="padding-top:120px">
-            <div class="two-col">
-                <div>
-                    <h2>About Me</h2>
-                    <p style="color:var(--muted);font-size:1.05rem">Senior Android Developer with <strong>7+ years</strong> experience focusing on native Android apps using <strong>Kotlin</strong>, Jetpack Compose, Android SDK and Firebase. I've designed and shipped <strong>24+ apps</strong> across domains such as taxi booking, AI, AR, POS, gaming and utilities, achieving several products with 50K+ installs.</p>
+    <main style="padding-top: 80px;">
+        <section class="section">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 1fr 350px; gap: 2rem;">
 
-                    <h3 style="margin-top:20px">What I do</h3>
-                    <ul style="color:var(--muted);line-height:1.8">
-                        <li>Native Android application architecture & development (Kotlin)</li>
-                        <li>Jetpack libraries, Compose UI, Coroutines, WorkManager</li>
-                        <li>Integrations: Firebase, Payments, MQTT, hardware printers & scanners</li>
-                        <li>Performance tuning, testing, CI/CD and release management</li>
-                    </ul>
+                    <!-- Main Content -->
+                    <div>
+                        <h2 class="gradient-text">About Me</h2>
+                        <div class="glass-card" style="margin-bottom: 3rem;">
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                Senior Android Developer with <strong style="color: var(--primary-color);">7+
+                                    years</strong> experience focusing on native Android apps using <strong
+                                    style="color: var(--primary-color);">Kotlin</strong>, Jetpack Compose, Android SDK
+                                and Firebase. I've designed and shipped <strong style="color: var(--primary-color);">24+
+                                    apps</strong> across domains such as taxi booking, AI, AR, POS, gaming and
+                                utilities, achieving several products with 50K+ installs.
+                            </p>
 
-                    <h3 style="margin-top:20px">Professional Experience</h3>
-                    <div class="experience-item">
-                        <div class="experience-date">06/2025 – Present</div>
-                        <div class="experience-company">Sr. Android Developer — Zarstack</div>
-                        <p style="color:var(--muted)">Building EMI solution product & platform-level Android features.</p>
+                            <h3 style="margin-bottom: 1rem;">What I do</h3>
+                            <ul
+                                style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary); line-height: 1.8;">
+                                <li>Native Android application architecture & development (Kotlin)</li>
+                                <li>Jetpack libraries, Compose UI, Coroutines, WorkManager</li>
+                                <li>Integrations: Firebase, Payments, MQTT, hardware printers & scanners</li>
+                                <li>Performance tuning, testing, CI/CD and release management</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="gradient-text" style="margin-bottom: 2rem;"><i class="fas fa-briefcase"
+                                style="margin-right: 10px;"></i> Work Experience</h3>
+
+                        <!-- Timeline -->
+                        <div class="timeline">
+
+                            <!-- Job 1: Zarstack -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <div class="flex-between" style="flex-wrap: wrap; margin-bottom: 0.5rem;">
+                                        <h4 style="font-size: 1.2rem;">👨‍💻 Sr. Android Developer | <span
+                                                style="color: var(--primary-color);">Zarstack</span></h4>
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                                        <div><i class="fas fa-map-marker-alt"></i> Amerali</div>
+                                        <div><i class="far fa-calendar-alt"></i> 06/2025 – Present</div>
+                                    </div>
+
+                                    <div
+                                        style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem;">
+                                        <ul
+                                            style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                                            <li>Working as an Android Developer, building an EMI Solution product.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Job 2: SilverSky -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <div class="flex-between" style="flex-wrap: wrap; margin-bottom: 0.5rem;">
+                                        <h4 style="font-size: 1.2rem;">👨‍💻 Sr. Android Developer | <span
+                                                style="color: var(--primary-color);">SilverSky Technology</span></h4>
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                                        <div><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat, India</div>
+                                        <div><i class="far fa-calendar-alt"></i> 09/2024 – 05/2025</div>
+                                    </div>
+
+                                    <div
+                                        style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem;">
+                                        <ul
+                                            style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                                            <li>Develop new applications, manage and maintain existing ones.</li>
+                                            <li>Mentor junior developers on best coding practices and bug fixing.</li>
+                                            <li>React Native development.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Job 3: BRND TECH -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <div class="flex-between" style="flex-wrap: wrap; margin-bottom: 0.5rem;">
+                                        <h4 style="font-size: 1.2rem;">👨‍💻 Sr. Android Developer | <span
+                                                style="color: var(--primary-color);">BRND TECH</span></h4>
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                                        <div><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat, India</div>
+                                        <div><i class="far fa-calendar-alt"></i> 01/2023 – 09/2024</div>
+                                    </div>
+
+                                    <div
+                                        style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem;">
+                                        <ul
+                                            style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                                            <li>Managing POS applications built on MVP Structure and Dagger.</li>
+                                            <li>Integrating various hardware (printers, scanners).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Job 4: TIS -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <div class="flex-between" style="flex-wrap: wrap; margin-bottom: 0.5rem;">
+                                        <h4 style="font-size: 1.2rem;">👨‍💻 Sr. Android Developer | <span
+                                                style="color: var(--primary-color);">TIS (Tech Integrity Service)</span>
+                                        </h4>
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                                        <div><i class="fas fa-map-marker-alt"></i> Rajkot, Gujarat, India</div>
+                                        <div><i class="far fa-calendar-alt"></i> 06/2020 – 11/2022</div>
+                                    </div>
+
+                                    <div
+                                        style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem;">
+                                        <ul
+                                            style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                                            <li>Created apps related to transportation business (taxi & bus).</li>
+                                            <li>Implemented MQTT, Endless services, Payment Gateways, and Flavors.</li>
+                                            <li>Led the Android team.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Job 5: BMAC -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <div class="flex-between" style="flex-wrap: wrap; margin-bottom: 0.5rem;">
+                                        <h4 style="font-size: 1.2rem;">👨‍💻 Android Developer | <span
+                                                style="color: var(--primary-color);">BMAC</span></h4>
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                                        <div><i class="fas fa-map-marker-alt"></i> Rajkot, Gujarat, India</div>
+                                        <div><i class="far fa-calendar-alt"></i> 08/2018 – 05/2020</div>
+                                    </div>
+
+                                    <div
+                                        style="background: rgba(139, 92, 246, 0.1); padding: 1rem; border-radius: 0.5rem;">
+                                        <ul
+                                            style="list-style: disc; padding-left: 1.5rem; color: var(--text-secondary);">
+                                            <li>Developed and designed more than 6 Apps.</li>
+                                            <li>Worked with Kotlin, AR-based Applications, and MVVM Structure.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Education Section -->
+                        <h3 class="gradient-text" style="margin: 3rem 0 2rem;"><i class="fas fa-graduation-cap"
+                                style="margin-right: 10px;"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <h4 style="font-size: 1.2rem;">🎓 B.E (Computer Engineering)</h4>
+                                    <p style="color: var(--primary-color); margin-bottom: 0.5rem;">Sanjaybhai Rajguru
+                                        College</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">2014 – 2018</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">
+                                        CGPI: 7.04</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <h4 style="font-size: 1.2rem;">🎓 12th Science</h4>
+                                    <p style="color: var(--primary-color); margin-bottom: 0.5rem;">Samarth Science
+                                        School</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem;">2012 – 2014</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="experience-item">
-                        <div class="experience-date">09/2024 – 05/2025</div>
-                        <div class="experience-company">Sr. Android Developer — SilverSky Technology</div>
-                        <p style="color:var(--muted)">Led Android development, mentoring teams, deliveries and bug-fix cycles.</p>
-                    </div>
+                    <!-- Sidebar Profile -->
+                    <aside>
+                        <div class="glass-card" style="text-align: center; position: sticky; top: 100px;">
+                            <img src="images/profile_crop.png" alt="Kalpesh"
+                                style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(139, 92, 246, 0.3); margin-bottom: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem;">Kalpesh Agravat</h3>
+                            <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 0.5rem;">Senior
+                                Android Developer</p>
+                            <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Kotlin • Jetpack Compose • Android SDK
+                            </p>
 
-                    <div class="experience-item">
-                        <div class="experience-date">01/2023 – 09/2024</div>
-                        <div class="experience-company">Sr. Android Developer — BRND TECH</div>
-                        <p style="color:var(--muted)">Managed POS & hardware-integrated Android apps.</p>
-                    </div>
+                            <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem;">
+                                <a href="https://github.com/KalpeshAgravat" target="_blank" class="btn btn-outline"
+                                    style="padding: 0.5rem;"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/kalpeshagravat/" target="_blank"
+                                    class="btn btn-outline" style="padding: 0.5rem;"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:kalpeshagravat456@gmail.com" class="btn btn-outline"
+                                    style="padding: 0.5rem;"><i class="fas fa-envelope"></i></a>
+                            </div>
+
+                            <a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary" style="width: 100%;"
+                                target="_blank">Download CV</a>
+                        </div>
+                    </aside>
+
                 </div>
-
-                <aside class="profile-card card">
-                    <img src="images/profile_crop.png" alt="Kalpesh">
-                    <h3>Kalpesh Agravat</h3>
-                    <p>Senior Android Developer</p>
-                    <p style="color:var(--muted)">Kotlin • Jetpack Compose • Android SDK</p>
-                    <div style="margin-top:12px;display:flex;gap:8px;justify-content:center">
-                        <a href="Kalpesh-Agravat-CV.pdf" class="btn btn-primary" target="_blank">Download CV</a>
-                    </div>
-                </aside>
             </div>
         </section>
-
-        <footer>
-            <p>&copy; 2023 Kalpesh Agravat</p>
-        </footer>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
